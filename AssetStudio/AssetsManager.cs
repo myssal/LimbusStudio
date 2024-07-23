@@ -350,7 +350,7 @@ namespace AssetStudio
         {
             if (assetsFile.IsVersionStripped && string.IsNullOrEmpty(SpecifyUnityVersion))
             {
-                throw new Exception("The Unity version has been stripped, please set the version in the options");
+                assetsFile.SetVersion("2021.3.28f1");
             }
             if (!string.IsNullOrEmpty(SpecifyUnityVersion))
             {
